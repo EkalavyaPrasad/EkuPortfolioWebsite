@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Ekalavya Prasad
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Ekalavya Prasad
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./Assets/IMG_0990-modified.png" alt="Ekalavya Prasad profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Ekalavya Prasad
+
+        </h1>
+        <p class="section__text__p2">Finance Graduate</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./Assets/Ekalavya_Prasad_CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https:www.linkedin.com/in/ekalavya-prasad-90102423b'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-section__pic-container">
+          <img
+            src="./Assets/IMG_8165-modified.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+
+          <div class="text-container">
+            <p>
+                Hi, I'm Ekalavya Prasad. I am currently pursuing my MSc in Financial Management at the University of Birmingham. I have a passion for coding, particularly in Python, focusing on machine learning and AI. My recent projects include credit risk modeling using deep learning and developing custom local chatbots. Outside of academics and coding, I enjoy playing basketball and had the honor of leading my team as captain to a tournament victory. In my free time, I love listening to music, playing the piano, cooking, and diving into a good book.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='#experience'"
+        />
+
+    </section>
+    <section id = "experience">
+      <p class="section__text__p1">Here are my</p>
+      <h1 class="title">Education and Certifications</h1>
+      <div class="about-details-container">
+        <div class="about-experience-containers">
+          <div class="details-container">
+            <img
+              src="./assets/education.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <h3 class="education-title">Education</h3>
+            <p>MSc Financial Management | University of Birmingham</p> <br>
+            <p>Bachelors of Commerce (Hons.) | Sri Sathya Sai Institute of Higher Learning</p> <br>
+            <p>All India Senior School Certificate Examination | The Lexicon International School</p>
+          </div>
+          <div class="details-container">
+            <img
+              src="./assets/experience.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <h3 class="education-title">Certifications</h3>
+            <p>Data Analysis Intern | Cognifyz Technologies</p> <br>
+            <p>Financial Audit Internship Experience | PricewaterhouseCoopers LLP</p> <br>
+            <p>Corporate Analyst Development Program | J.P Morgan Chase and Co. (Forage)</p>  <br>
+            <p>Diploma in Accounting and Finance | Oxford Home Study Centre (Pursuing...)</p>
+          </div>
+          
+        </div>
+
+      </div>
+      <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='#projects'"
+    />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse my recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="projects-scroll-container">
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./Assets/Dis Cover Page.png" alt="project-1" class="project-img">
+                <h2 class="experience-sub-title project-title">Deep learning in Credit risk analysis</h2>
+                <small class="experience-description">Deep learning | Credit risk Modeling</small>
+                <div class="button-container">
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.linkedin.com/posts/ekalavya-prasad-90102423b_mscdissertation-deeplearning-creditriskanalysis-activity-7241494001420234752-bJe4?utm_source=share&utm_medium=member_desktop'">
+                    Read more
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./Assets/Moodys AI.png" alt="project-2" class="project-img">
+                <h2 class="experience-sub-title project-title">Moody's Credit Rate Card AI Model</h2>
+                <small class="experience-description">LLMs | Financial Modeling | Python</small>
+                <div class="button-container">
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.linkedin.com/posts/ekalavya-prasad-90102423b_generativeai-machinelearning-creditrisk-activity-7234185819056414721-a0Dl?utm_source=share&utm_medium=member_desktop'">
+                    Read more
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./Assets/web chat .png" alt="project-3" class="project-img">
+                <h2 class="experience-sub-title project-title">Custom AI Bot with Web Integration</h2>
+                <small class="experience-description">Seach API Integration | LLMs and AI</small>
+
+                <div class="button-container">
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.linkedin.com/posts/ekalavya-prasad-90102423b_ai-machinelearning-python-activity-7232488015518994432-AqZk?utm_source=share&utm_medium=member_desktop'">
+                    Read more
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./Assets/Pokemon classifier.jpeg" alt="project-4" class="project-img">
+                <h2 class="experience-sub-title project-title">Pokemon Type Classifier</h2>
+                <small class="experience-description">Deep Neural Networks | Image Classification</small>
+
+                <div class="button-container">
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/EkalavyaPrasad/Pokemon_Classifier '">
+                    Read more
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./Assets/automated piano tiles.jpeg" alt="project-5" class="project-img">
+                <h2 class="experience-sub-title project-title">Piano tiles player</h2>
+                <small class="experience-description">Automation | Object Detection | Scripting</small>
+
+                <div class="button-container">
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.linkedin.com/in/ekalavya-prasad-90102423b/details/projects/'">
+                    Read more
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./Assets/Global heatmap.png" alt="project-6" class="project-img">
+                <h2 class="experience-sub-title project-title">Global restaurant heatmap</h2>
+                <small class="experience-description">Data Analysis | Data Visualisation</small>
+
+                <div class="button-container">
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.linkedin.com/in/ekalavya-prasad-90102423b/details/projects/'">
+                    Read more
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./Assets/Image chatbot folder.png" alt="project-7" class="project-img">
+                <h2 class="experience-sub-title project-title">Image LLM Chatbot</h2>
+                <small class="experience-description">LLMs | Python | Image Embeddings</small>
+                <div class="button-container">
+                  <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
+                    Read more
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+      <button id="next-button"><img src="./Assets/next.png" alt="Next" class="button-img"></button>
+      <button id="prev-button"><img src="./Assets/prev.png" alt="Prev" class="prev-button-img">  </button>
+
+
+      <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#contact'"
+    />
+
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:eklavya.prasad2709@gmail.com">My Email</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/ekalavya-prasad-90102423b">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img
+                src="./Assets/455705.png"
+                alt="Phone icon"
+                class="icon contact-icon email-icon"
+            />
+            <p><a href="tel:+44 7774732797">Mobile</a></p>
+            </div>
+    </div>
+    
+        </div>
+    
+      
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Ekalavya Prasad. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
