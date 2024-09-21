@@ -34,3 +34,29 @@ prevButton.addEventListener('click', () => {
         behavior: 'smooth' // Smooth scrolling
     });
 });
+
+const scrollContainer2 = document.querySelector('.projects-scroll-container-2');
+const nextButton2 = document.getElementById('next-button-2');
+
+// Define the scroll step (how much to scroll each time the button is clicked)
+
+// Add a click event listener to the next button
+nextButton2.addEventListener('click', () => {
+    // Scroll the container horizontally
+    scrollContainer2.scrollBy({
+        left: scrollStep,
+        behavior: 'smooth' // Smooth scrolling
+    });
+});
+
+
+const prevButton2 = document.getElementById('prev-button-2');
+
+// Add a click event listener to the previous button
+prevButton2.addEventListener('click', () => {
+    // Scroll the container horizontally in the opposite direction
+    scrollContainer2.scrollBy({
+        left: -scrollStep,
+        behavior: 'smooth' // Smooth scrolling
+    });
+});
