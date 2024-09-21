@@ -370,6 +370,14 @@ section {
     max-width: 100%; /* Ensure it doesn't exceed the viewport width */
     scroll-behavior: smooth; /* Optional: Add some padding */
   }
+.projects-scroll-container-2 {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping of child elements */
+    padding: 1rem 0;
+    display: flex;
+    max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+    scroll-behavior: smooth; /* Optional: Add some padding */
+  }
 
 .details-container {
   display: inline-block; /* Keep each project as an inline block */
@@ -383,7 +391,7 @@ section {
 
 #experience {
   position: relative;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
 }
 
 .experience-sub-title {
@@ -444,6 +452,10 @@ article .icon {
 #projects {
   position: relative;
 }
+#research {
+  position: relative;
+  margin-bottom: 10%;
+}
 
 .color-container {
   border-color: rgb(163, 163, 163);
@@ -465,7 +477,7 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163,163,163);
-margin-top: 50%;
+  margin-top: 50%;
   bottom: 0%;
 }
 
@@ -656,6 +668,20 @@ footer p {
     box-sizing: border-box;
     height: fit-content;
   }
+  #research {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%; /* Ensure it takes up the full width of the viewport */
+    justify-content: center;
+    align-items: center; /* Center child elements horizontally */
+    margin: 0 auto;
+    margin-top: 30%; /* Center the profile section in its parent container */
+    box-sizing: border-box;
+    height: fit-content;
+  }
+
+  
 
   .project-img {
     height: 200px;
